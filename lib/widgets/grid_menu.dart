@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:visual_studio_practice/widgets/buttons.dart';
 import 'package:visual_studio_practice/widgets/square_button.dart';
 
 class GridMenu extends StatelessWidget {
@@ -13,18 +14,8 @@ class GridMenu extends StatelessWidget {
       children: [
         Row(
           children: const [
-            SquareButton(
-              squareSize: 210,
-              assetName: 'assets/menu_images/abc.png',
-              buttonColor: Colors.red,
-              buttonLabel: 'ABC',
-            ),
-            SquareButton(
-              squareSize: 210,
-              assetName: 'assets/menu_images/Numbers.png',
-              buttonColor: Colors.green,
-              buttonLabel: 'Numbers',
-            ),
+            LettersButton(buttonSize: 210),
+            NumbersButton(buttonSize: 210),
           ],
         ),
         const SizedBox(
@@ -32,18 +23,8 @@ class GridMenu extends StatelessWidget {
         ),
         Row(
           children: const [
-            SquareButton(
-              squareSize: 210,
-              assetName: 'assets/menu_images/Colors.png',
-              buttonColor: Colors.blueGrey,
-              buttonLabel: 'Colors',
-            ),
-            SquareButton(
-              squareSize: 210,
-              assetName: 'assets/menu_images/Forms.png',
-              buttonColor: Colors.blue,
-              buttonLabel: 'Forms',
-            ),
+            ColorsButton(buttonSize: 210),
+            FormsButton(buttonSize: 210),
           ],
         ),
       ],

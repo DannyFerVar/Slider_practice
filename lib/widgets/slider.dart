@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Slides extends StatefulWidget {
-  // final List slidesList;
-  const Slides({Key? key}) : super(key: key);
-  
+  final List<String> slidesList;
+
+  const Slides({Key? key, required this.slidesList}) : super(key: key);
+
   @override
   State<Slides> createState() => _SlidesState();
 }
@@ -29,34 +30,9 @@ class _SlidesState extends State<Slides> {
     return PageView(
       physics: const BouncingScrollPhysics(),
       controller: slidesController,
-      children: const [
-        SlideContainer(svg: 'assets/letters/a.svg'),
-        SlideContainer(svg: 'assets/letters/b.svg'),
-        SlideContainer(svg: 'assets/letters/c.svg'),
-        SlideContainer(svg: 'assets/letters/d.svg'),
-        SlideContainer(svg: 'assets/letters/e.svg'),
-        SlideContainer(svg: 'assets/letters/f.svg'),
-        SlideContainer(svg: 'assets/letters/g.svg'),
-        SlideContainer(svg: 'assets/letters/h.svg'),
-        SlideContainer(svg: 'assets/letters/i.svg'),
-        SlideContainer(svg: 'assets/letters/j.svg'),
-        SlideContainer(svg: 'assets/letters/k.svg'),
-        SlideContainer(svg: 'assets/letters/l.svg'),
-        SlideContainer(svg: 'assets/letters/m.svg'),
-        SlideContainer(svg: 'assets/letters/n.svg'),
-        SlideContainer(svg: 'assets/letters/o.svg'),
-        SlideContainer(svg: 'assets/letters/p.svg'),
-        SlideContainer(svg: 'assets/letters/q.svg'),
-        SlideContainer(svg: 'assets/letters/r.svg'),
-        SlideContainer(svg: 'assets/letters/s.svg'),
-        SlideContainer(svg: 'assets/letters/t.svg'),
-        SlideContainer(svg: 'assets/letters/u.svg'),
-        SlideContainer(svg: 'assets/letters/v.svg'),
-        SlideContainer(svg: 'assets/letters/w.svg'),
-        SlideContainer(svg: 'assets/letters/x.svg'),
-        SlideContainer(svg: 'assets/letters/y.svg'),
-        SlideContainer(svg: 'assets/letters/z.svg'),
-      ],
+      children: widget.slidesList
+          .map((svg) => SlideContainer(svg: svg))
+          .toList(),
     );
   }
 }

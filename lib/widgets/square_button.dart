@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:visual_studio_practice/pages/slider_page.dart';
 
 class SquareButton extends StatelessWidget {
   final String assetName;
   final String buttonLabel;
   final Color buttonColor;
   final double squareSize;
+  final Widget routeToGo;
 
   const SquareButton({
     Key? key,
@@ -14,14 +14,15 @@ class SquareButton extends StatelessWidget {
     required this.buttonColor,
     required this.buttonLabel,
     required this.squareSize,
+    required this.routeToGo,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (context) => const SliderPage()));
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => routeToGo));
       },
       child: Container(
         margin: const EdgeInsets.all(15),

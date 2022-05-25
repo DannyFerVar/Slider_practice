@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:visual_studio_practice/widgets/square_button.dart';
 
-class ButtomBottons extends StatelessWidget {
-  const ButtomBottons({Key? key}) : super(key: key);
+class BottomButtons extends StatelessWidget {
+  final Widget pagesButton1;
+  final Widget pagesButton2;
+  final Widget pagesButton3;
+
+  const BottomButtons(
+      {Key? key,
+      required this.pagesButton1,
+      required this.pagesButton2,
+      required this.pagesButton3})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,24 +21,10 @@ class ButtomBottons extends StatelessWidget {
         color: Colors.black.withOpacity(0.05),
       ),
       child: Row(
-        children: const [
-          SquareButton(
-            assetName: 'assets/menu_images/Numbers.png',
-            buttonColor: Colors.green,
-            buttonLabel: 'ABC',
-            squareSize: 130,
-          ),
-          SquareButton(
-              assetName: 'assets/menu_images/Colors.png',
-              buttonColor: Colors.blueGrey,
-              buttonLabel: 'Numbers',
-              squareSize: 130),
-          SquareButton(
-            assetName: 'assets/menu_images/Forms.png',
-            buttonColor: Colors.blue,
-            buttonLabel: 'Colors',
-            squareSize: 130,
-          ),
+        children: [
+          pagesButton1,
+          pagesButton2,
+          pagesButton3,
         ],
       ),
     );
