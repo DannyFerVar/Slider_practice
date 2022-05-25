@@ -12,7 +12,7 @@ class FormsPage extends StatelessWidget {
         title: const Text('Forms'),
       ),
       body: Column(
-        children: [
+        children: const [
           BottomButtons(
             pagesButton1: LettersButton(buttonSize: 130),
             pagesButton2: NumbersButton(buttonSize: 130),

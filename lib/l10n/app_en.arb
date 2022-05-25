@@ -1,0 +1,10 @@
+{
+    "language" : "English",
+    "@language":{
+        "description": "The current app Language"
+    },
+    "grettings" : "Hello World!",
+    "@grettings" :{
+        "description": "A greeting in diferent languages"
+    }
+}

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:visual_studio_practice/widgets/buttons.dart';
-import 'package:visual_studio_practice/widgets/square_button.dart';
 
 class GridMenu extends StatelessWidget {
   const GridMenu({

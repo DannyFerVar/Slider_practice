@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:visual_studio_practice/widgets/buttons.dart';
 import 'package:visual_studio_practice/widgets/navigation_bar.dart';
-import 'package:visual_studio_practice/widgets/slider.dart';
 
 class ColorsPage extends StatelessWidget {
   const ColorsPage({Key? key}) : super(key: key);
@@ -10,7 +9,7 @@ class ColorsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Colors'),
+        title: const Text('Colors'),
       ),
       body: Column(
         children: const [
