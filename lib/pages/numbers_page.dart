@@ -29,6 +29,7 @@ class NumbersPage extends StatelessWidget {
                 ],
               ),
             ),
+            // Buttons on this page
             BottomButtons(
               pagesButton1: LettersButton(buttonSize: 130),
               pagesButton2: ColorsButton(buttonSize: 130),

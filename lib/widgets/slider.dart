@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 
+// This class contains the configuration for the Sliders in order to be reusable
+
 class Slides extends StatefulWidget {
   final List<String> slidesList;
 
@@ -12,6 +14,7 @@ class Slides extends StatefulWidget {
 }
 
 class _SlidesState extends State<Slides> {
+  //Controller
   final slidesController = PageController();
 
   @override
@@ -30,13 +33,13 @@ class _SlidesState extends State<Slides> {
     return PageView(
       physics: const BouncingScrollPhysics(),
       controller: slidesController,
-      children: widget.slidesList
-          .map((svg) => SlideContainer(svg: svg))
-          .toList(),
+      children:
+          widget.slidesList.map((svg) => SlideContainer(svg: svg)).toList(),
     );
   }
 }
 
+// A simple slide container
 class SlideContainer extends StatelessWidget {
   final String svg;
 

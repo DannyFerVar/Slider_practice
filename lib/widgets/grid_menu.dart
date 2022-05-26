@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:visual_studio_practice/widgets/buttons.dart';
 
+// Configuration of the main menú screen
+
 class GridMenu extends StatelessWidget {
   const GridMenu({
     Key? key,

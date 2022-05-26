@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// This class builds the single button for each slider option
+
 class SquareButton extends StatelessWidget {
   final String assetName;
   final String buttonLabel;
@@ -24,10 +26,12 @@ class SquareButton extends StatelessWidget {
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => routeToGo));
       },
+      //Container button
       child: Container(
         margin: const EdgeInsets.all(15),
         width: squareSize,
         height: squareSize,
+        // Border decoration of the button
         decoration: BoxDecoration(
             borderRadius: const BorderRadius.all(
               Radius.circular(30),
@@ -43,10 +47,11 @@ class SquareButton extends StatelessWidget {
               color: buttonColor,
               width: 2.0,
             )),
-        // child: Stack_Button(),
+        // Contain of the button,
         child: ClipRRect(
           borderRadius: const BorderRadius.vertical(
               bottom: Radius.circular(28), top: Radius.circular(30)),
+          //Image and gradient container
           child: Stack(
             children: [
               Image(
@@ -55,7 +60,6 @@ class SquareButton extends StatelessWidget {
               Positioned(
                 bottom: -2.0,
                 child: Container(
-                  // padding: EdgeInsets.only(left: 15),
                   alignment: Alignment.center,
                   width: squareSize,
                   height: 50,
@@ -66,6 +70,7 @@ class SquareButton extends StatelessWidget {
                       colors: [Colors.white.withOpacity(0.2), buttonColor],
                     ),
                   ),
+                  // Button label
                   child: Text(
                     buttonLabel,
                     style: GoogleFonts.josefinSans(

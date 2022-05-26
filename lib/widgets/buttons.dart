@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+
 import 'package:visual_studio_practice/pages/colors_page.dart';
 import 'package:visual_studio_practice/pages/forms_page.dart';
 import 'package:visual_studio_practice/pages/letters_page.dart';
 import 'package:visual_studio_practice/pages/numbers_page.dart';
 import 'package:visual_studio_practice/widgets/square_button.dart';
 
+//This clases stores the funcionabillity of each button, in order to only need to provide the size of the button on diferent screens.
+
+// Letters button
 class LettersButton extends StatelessWidget {
   final double buttonSize;
 
@@ -22,6 +26,7 @@ class LettersButton extends StatelessWidget {
   }
 }
 
+// Numbers Button
 class NumbersButton extends StatelessWidget {
   final double buttonSize;
 
@@ -39,6 +44,7 @@ class NumbersButton extends StatelessWidget {
   }
 }
 
+// Colors Button
 class ColorsButton extends StatelessWidget {
   final double buttonSize;
 
@@ -56,6 +62,7 @@ class ColorsButton extends StatelessWidget {
   }
 }
 
+// Forms Button
 class FormsButton extends StatelessWidget {
   final double buttonSize;
 

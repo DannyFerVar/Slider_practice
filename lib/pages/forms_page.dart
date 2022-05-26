@@ -14,6 +14,9 @@ class FormsPage extends StatelessWidget {
       body: Column(
         children: const [
           BottomButtons(
+            // Slides(slidesList: slidesList),
+
+            //Buttons on this page
             pagesButton1: LettersButton(buttonSize: 130),
             pagesButton2: NumbersButton(buttonSize: 130),
             pagesButton3: ColorsButton(

@@ -45,6 +45,7 @@ class LettersPage extends StatelessWidget {
                 ],
               ),
             ),
+            //Buttons on this page
             BottomButtons(
               pagesButton1: NumbersButton(buttonSize: 130),
               pagesButton2: ColorsButton(buttonSize: 130),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//This class defines the bottom bar on each page in order for user to been able to navigate easly to other pages
+
 class BottomButtons extends StatelessWidget {
   final Widget pagesButton1;
   final Widget pagesButton2;
