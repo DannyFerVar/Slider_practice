@@ -12,18 +12,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Babys Sliders',
-      // TODO: locale: provider.locale,
-      supportedLocales: L10n.all,
-      localizationsDelegates: const [
-        AppLocalizations.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ],
-      home: const MainMenuPage(),
+      // locale: provider.locale,
+      // supportedLocales: L10n.all,
+      // localizationsDelegates: const [
+      //   AppLocalizations.delegate,
+      //   GlobalMaterialLocalizations.delegate,
+      //   GlobalCupertinoLocalizations.delegate,
+      //   GlobalWidgetsLocalizations.delegate,
+      // ],
+      home: MainMenuPage(),
     );
   }
 }
