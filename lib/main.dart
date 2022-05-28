@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'package:visual_studio_practice/l10n/l10n.dart';
 import 'package:visual_studio_practice/pages/main_menu.dart';
 
 void main() => runApp(const MyApp());
