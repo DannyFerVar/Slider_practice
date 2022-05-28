@@ -38,7 +38,7 @@ class NumbersButton extends StatelessWidget {
       routeToGo: const NumbersPage(),
       assetName: 'assets/menu_images/Numbers.png',
       buttonColor: Colors.green,
-      buttonLabel: 'Numbers',
+      buttonLabel: 'Números',
       squareSize: buttonSize,
     );
   }
@@ -56,7 +56,7 @@ class ColorsButton extends StatelessWidget {
       routeToGo: const ColorsPage(),
       assetName: 'assets/menu_images/Colors.png',
       buttonColor: Colors.yellow,
-      buttonLabel: 'Colors',
+      buttonLabel: 'Colores',
       squareSize: buttonSize,
     );
   }
@@ -74,7 +74,7 @@ class FormsButton extends StatelessWidget {
       routeToGo: const FormsPage(),
       assetName: 'assets/menu_images/Forms.png',
       buttonColor: Colors.blue,
-      buttonLabel: 'Forms',
+      buttonLabel: 'Formas',
       squareSize: buttonSize,
     );
   }
